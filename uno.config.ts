@@ -1,21 +1,18 @@
-import { defineConfig } from 'unocss'
+import { defineConfig, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   theme: {
     colors: {
-      primary: {
-        100: '#71604D',
-        90: '#84745B',
-        80: '#A39481',
-        70: '#B8AB9A',
-        60: '#C8BCAC',
-        50: '#DAD1C2',
-        40: '#E2DDD1',
-        30: '#EEE8DC',
-        20: '#F9F4E9'
-      },
-      secondary: '#C5C7BA',
-      tertiary: '#CCBAB1'
+      'deep-primary': '#e6dacd',
+      primary: '#f4ece6',
+      white: '#fcfbfa'
+    },
+    boxShadow: {
+      'home-card': '-10px 10px 18px 0 rgba(0, 0, 0, .2)'
     }
-  }
+  },
+  shortcuts: {
+    'flex-center': 'flex items-center justify-center'
+  },
+  transformers: [transformerDirectives()]
 })
