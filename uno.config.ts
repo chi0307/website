@@ -5,7 +5,8 @@ export default defineConfig({
     colors: {
       'deep-primary': '#e6dacd',
       primary: '#f4ece6',
-      white: '#fcfbfa'
+      white: '#fcfbfa',
+      emphasis: '#5288FE'
     },
     boxShadow: {
       'home-card': '-10px 10px 18px 0 rgba(0, 0, 0, .2)'
