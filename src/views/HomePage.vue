@@ -6,8 +6,8 @@
       <div class="flex-1 h-full flex-col px-36px py-60px">
         <div class="flex-grow"></div>
         <div class="h-40px w-full flex items-center justify-around">
-          <div class="profile-button">Resume</div>
-          <div class="profile-button">Projects</div>
+          <div class="profile-button" @click="$router.push(Route.resume)">Resume</div>
+          <div class="profile-button" @click="$router.push(Route.projects)">Projects</div>
         </div>
       </div>
     </div>
@@ -16,6 +16,7 @@
 
 <script setup lang="ts">
 import ProfileCard from '@/components/ProfileCard.vue'
+import { Route } from '@/router/route'
 </script>
 <style scoped>
 .profile-button {
