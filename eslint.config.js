@@ -1,5 +1,6 @@
 import * as tsEslint from 'typescript-eslint'
 import js from '@eslint/js'
+import importX from 'eslint-plugin-import-x'
 import perfectionist from 'eslint-plugin-perfectionist'
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs'
 import security from 'eslint-plugin-security'
@@ -13,13 +14,23 @@ export default tsEslint.config(
   security.configs.recommended,
   ...tsEslint.configs.stylisticTypeChecked,
   ...tsEslint.configs.strictTypeChecked,
+  importX.flatConfigs.typescript,
   ...vue.configs['flat/recommended'],
   unocss.configs.flat,
   prettierRecommended,
   {
     plugins: {
       '@typescript-eslint': tsEslint.plugin,
+      'import-x': importX,
       perfectionist
+    },
+    settings: {
+      'import-x/resolver': {
+        typescript: {
+          alwaysTryTypes: true,
+          project: ['**/tsconfig.json', '**/tsconfig.*.json']
+        }
+      }
     },
     languageOptions: {
       parserOptions: {
@@ -58,7 +69,8 @@ export default tsEslint.config(
           ],
           internalPattern: ['@/**']
         }
-      ]
+      ],
+      'import-x/no-cycle': 'error'
     }
   },
   {
