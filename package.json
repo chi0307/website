@@ -8,7 +8,9 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "format": "prettier --write src/",
+    "format": "pnpm run \"/^format:.*/\"",
+    "format:lint": "eslint . --fix",
+    "format:prettier": "prettier --write src/",
     "check": "pnpm run \"/^check:.*/\"",
     "check:build": "vue-tsc --build --force",
     "check:lint": "eslint ."

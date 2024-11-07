@@ -7,7 +7,7 @@
       }"
     >
       <p class="text-2rem font-bold">Website</p>
-      <div class="flex-center gap-16px">
+      <div class="gap-16px flex-center">
         <p
           v-for="(item, index) of pageList"
           :key="index"

@@ -1,6 +1,6 @@
 <template>
   <div class="flex-col bg-primary w-360px h-600px shadow-home-card">
-    <div class="w-360px h-360px flex-center">
+    <div class="w-360px flex-center h-360px">
       <img
         src="/profile.jpeg"
         alt="profile-card"
