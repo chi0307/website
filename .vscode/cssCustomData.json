@@ -1,0 +1,8 @@
+{
+  "atDirectives": [
+    {
+      "description": "Unocss Directives transformer https://unocss.dev/transformers/directives#apply",
+      "name": "@apply"
+    }
+  ]
+}
