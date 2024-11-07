@@ -33,7 +33,7 @@
 <script setup lang="ts">
 import { RouterView, useRoute } from 'vue-router'
 
-import { Route } from './router/route'
+import { Route } from '@/router/route'
 
 const route = useRoute()
 

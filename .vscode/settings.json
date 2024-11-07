@@ -4,5 +4,6 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "css.customData": [".vscode/cssCustomData.json"]
+  "css.customData": [".vscode/cssCustomData.json"],
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
