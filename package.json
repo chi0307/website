@@ -8,10 +8,10 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force",
+    "format": "prettier --write src/",
     "check": "pnpm run \"/^check:.*/\"",
-    "check:lint": "eslint .",
-    "format": "prettier --write src/"
+    "check:build": "vue-tsc --build --force",
+    "check:lint": "eslint ."
   },
   "dependencies": {
     "@unocss/reset": "^0.64.0",
