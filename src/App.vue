@@ -1,7 +1,7 @@
 <template>
-  <div class="w-100vw relative bg-white h-100vh">
+  <div class="bg-white relative w-100vw h-100vh">
     <header
-      class="z-100 top-0 left-0 sticky w-full bg-white px-64px flex items-center justify-between"
+      class="bg-white w-full flex items-center justify-between top-0 left-0 z-100 sticky px-64px"
       :style="{
         height: headerHeight
       }"
@@ -12,10 +12,10 @@
           v-for="(item, index) of pageList"
           :key="index"
           class="cursor-pointer"
-          @click="$router.push(item.route)"
           :class="{
             'text-emphasis': checkIsCurrentPage(item.route)
           }"
+          @click="$router.push(item.route)"
         >
           {{ item.title }}
         </p>
@@ -31,9 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
+
 import { Route } from './router/route'
-import { useRoute } from 'vue-router'
 
 const route = useRoute()
 

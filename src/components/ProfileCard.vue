@@ -7,16 +7,16 @@
         class="w-200px h-200px rounded-full object-cover"
       />
     </div>
-    <div class="flex-grow flex-col items-center justify-between">
+    <div class="flex-col items-center justify-between flex-grow">
       <p class="text-2rem font-bold">Benson Wang</p>
-      <p class="text-1rem font-bold">Full-Stack Engineer</p>
+      <p class="font-bold text-1rem">Full-Stack Engineer</p>
       <p></p>
     </div>
-    <div class="h-60px bg-white w-full flex items-center justify-around px-32px text-32px">
+    <div class="items-center bg-white w-full flex h-60px justify-around px-32px text-32px">
       <div
-        class="w-48px flex-center h-48px cursor-pointer hover:text-emphasis"
         v-for="(item, index) of socialMediaList"
         :key="index"
+        class="flex-center cursor-pointer w-48px h-48px hover:text-emphasis"
         @click="() => redirectNewWindow(item.redirectUrl)"
       >
         <i :class="item.iconClass" />

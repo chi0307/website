@@ -1,11 +1,11 @@
 <template>
-  <main class="relative flex-center">
-    <div class="h-full absolute top-0 left-0 w-35% bg-deep-primary"></div>
-    <div class="h-600px z-1 w-720px flex">
+  <main class="flex-center relative">
+    <div class="top-0 left-0 h-full absolute w-35% bg-deep-primary"></div>
+    <div class="h-600px flex z-1 w-720px">
       <ProfileCard class="flex-1" />
       <div class="flex-1 h-full flex-col px-36px py-60px">
         <div class="flex-grow"></div>
-        <div class="h-40px w-full flex items-center justify-around">
+        <div class="w-full flex items-center justify-around h-40px">
           <div class="profile-button" @click="$router.push(Route.resume)">Resume</div>
           <div class="profile-button" @click="$router.push(Route.projects)">Projects</div>
         </div>
