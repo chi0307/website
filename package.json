@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p check \"build-only {@}\" --",
+    "generate-pages": "sh ./generate-pages.sh",
+    "build": "pnpm run generate-pages && run-p check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "format": "pnpm run \"/^format:.*/\"",

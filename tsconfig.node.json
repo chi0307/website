@@ -6,7 +6,8 @@
     "cypress.config.*",
     "nightwatch.conf.*",
     "playwright.config.*",
-    "uno.config.ts"
+    "uno.config.ts",
+    "src/router/route.ts"
   ],
   "compilerOptions": {
     "composite": true,
