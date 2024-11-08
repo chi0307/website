@@ -1,3 +1,3 @@
 <template>
-  <main class="relative flex-center"></main>
+  <main class="relative flex-center">Resume</main>
 </template>
