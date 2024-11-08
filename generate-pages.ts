@@ -9,5 +9,6 @@ for (const route of Object.values(Route)) {
   if (fileName === '') {
     continue
   }
+  // eslint-disable-next-line security/detect-non-literal-fs-filename
   fs.writeFileSync(`${fileName}.html`, template, 'utf-8')
 }
