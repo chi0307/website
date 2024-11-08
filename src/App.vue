@@ -46,7 +46,7 @@ interface PageItem {
 const pageList: PageItem[] = [
   {
     title: 'About Me',
-    route: Route.home
+    route: Route.aboutMe
   },
   {
     title: 'Resume',

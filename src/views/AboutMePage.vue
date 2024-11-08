@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-center relative">
+  <main class="relative flex-center">
     <div class="top-0 left-0 h-full absolute w-35% bg-deep-primary"></div>
     <div class="h-600px flex z-1 w-720px">
       <ProfileCard class="flex-1" />
